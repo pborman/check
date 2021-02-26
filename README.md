@@ -50,7 +50,7 @@ for _, tt := range []struct {
         {`expect exact match on "This Error"`, check.Equal("This Error")},
         {`expect "an error" to be in the error`, "an error"},
 } {
-        if s := error.Check(myFunc(tt.input), tt.err); s != "" {
+        if s := check.Error(myFunc(tt.input), tt.err); s != "" {
                 t.Errorf("myFunc(%s): %s", tt.input, s)
         }
 }
