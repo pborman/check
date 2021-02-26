@@ -6,6 +6,8 @@ empty string (they matched) or a string describing why the check failed.
 Errors can be checked against different types of values depending
 on the use case.
 ```
+var got error
+
 TYPE       CHECK MECHANISM
 error:     got must be exactly want
 bool:      check for existance of error
