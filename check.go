@@ -156,7 +156,6 @@ func Error(got error, want interface{}) string {
 			return sprintf(unexpected, got)
 		}
 	case error:
-_ = errors.New
 		switch {
 		case got == nil:
 			return sprintf(expected, want)
